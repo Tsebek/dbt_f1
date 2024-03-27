@@ -1,0 +1,23 @@
+dbt_f1:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: f1_dataset
+      schema: dev
+      threads: 1
+      connect_timeout: 10 # default 10 seconds
+    prod:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: f1_dataset
+      schema: prod
+      threads: 1
+      connect_timeout: 10 # default 10 seconds

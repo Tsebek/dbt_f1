@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: f1
+    schema: raw
+    tables:
+      - name: driver_standings
+        identifier: driver_standings
+      - name: drivers
+        identifier: drivers
+      - name: races
+        identifier: races
+      - name: results
+        identifier: results
+      - name: sprint_results
+        identifier: sprint_results
